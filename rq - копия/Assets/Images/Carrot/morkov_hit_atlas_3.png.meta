@@ -1,0 +1,302 @@
+fileFormatVersion: 2
+guid: 2aa5a59843de4dc44a00cdfba56549ef
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: morkov_hit_atlas_3_0
+    21300002: morkov_hit_atlas_3_1
+    21300004: morkov_hit_atlas_3_2
+    21300006: morkov_hit_atlas_3_3
+    21300008: morkov_hit_atlas_3_4
+    21300010: morkov_hit_atlas_3_5
+    21300012: morkov_hit_atlas_3_6
+    21300014: morkov_hit_atlas_3_7
+    21300016: morkov_hit_atlas_3_8
+    21300018: morkov_hit_atlas_3_9
+    21300020: morkov_hit_atlas_3_10
+    21300022: morkov_hit_atlas_3_11
+    21300024: morkov_hit_atlas_3_12
+    21300026: morkov_hit_atlas_3_13
+    21300028: morkov_hit_atlas_3_14
+    21300030: morkov_hit_atlas_3_15
+    21300032: morkov_hit_atlas_3_16
+    21300034: morkov_hit_atlas_3_17
+    21300036: morkov_hit_atlas_3_18
+    21300038: morkov_hit_atlas_3_19
+    21300040: morkov_hit_atlas_3_20
+    21300042: morkov_hit_atlas_3_21
+    21300044: morkov_hit_atlas_3_22
+    21300046: morkov_hit_atlas_3_23
+    21300048: morkov_hit_atlas_3_24
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: morkov_hit_atlas_3_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 286
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: morkov_hit_atlas_3_1
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 286
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: morkov_hit_atlas_3_2
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 286
+        width: 61
+        height: 63
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: morkov_hit_atlas_3_3
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 285
+        width: 60
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: morkov_hit_atlas_3_4
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 286
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: morkov_hit_atlas_3_5
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 217
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: morkov_hit_atlas_3_6
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 217
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: morkov_hit_atlas_3_7
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 217
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: morkov_hit_atlas_3_8
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 216
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: morkov_hit_atlas_3_9
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 217
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: morkov_hit_atlas_3_10
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 146
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: morkov_hit_atlas_3_11
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 145
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: morkov_hit_atlas_3_12
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 146
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: morkov_hit_atlas_3_13
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 146
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: morkov_hit_atlas_3_14
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 145
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: morkov_hit_atlas_3_15
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 77
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: morkov_hit_atlas_3_16
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 77
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: morkov_hit_atlas_3_17
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 77
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: morkov_hit_atlas_3_18
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 74
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: morkov_hit_atlas_3_19
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 76
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: morkov_hit_atlas_3_20
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 7
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: morkov_hit_atlas_3_21
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 7
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: morkov_hit_atlas_3_22
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 7
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

@@ -1,0 +1,377 @@
+fileFormatVersion: 2
+guid: e3f207bb4d8c0c64cb91c7184095b999
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: morkov_kombo_3_atlas_0
+    21300002: morkov_kombo_3_atlas_1
+    21300004: morkov_kombo_3_atlas_2
+    21300006: morkov_kombo_3_atlas_3
+    21300008: morkov_kombo_3_atlas_4
+    21300010: morkov_kombo_3_atlas_5
+    21300012: morkov_kombo_3_atlas_6
+    21300014: morkov_kombo_3_atlas_7
+    21300016: morkov_kombo_3_atlas_8
+    21300018: morkov_kombo_3_atlas_9
+    21300020: morkov_kombo_3_atlas_10
+    21300022: morkov_kombo_3_atlas_11
+    21300024: morkov_kombo_3_atlas_12
+    21300026: morkov_kombo_3_atlas_13
+    21300028: morkov_kombo_3_atlas_14
+    21300030: morkov_kombo_3_atlas_15
+    21300032: morkov_kombo_3_atlas_16
+    21300034: morkov_kombo_3_atlas_17
+    21300036: morkov_kombo_3_atlas_18
+    21300038: morkov_kombo_3_atlas_19
+    21300040: morkov_kombo_3_atlas_20
+    21300042: morkov_kombo_3_atlas_21
+    21300044: morkov_kombo_3_atlas_22
+    21300046: morkov_kombo_3_atlas_23
+    21300048: morkov_kombo_3_atlas_24
+    21300050: morkov_kombo_3_atlas_25
+    21300052: morkov_kombo_3_atlas_26
+    21300054: morkov_kombo_3_atlas_27
+    21300056: morkov_kombo_3_atlas_28
+    21300058: morkov_kombo_3_atlas_29
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 30
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: morkov_kombo_3_atlas_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 606
+        width: 110
+        height: 66
+      alignment: 9
+      pivot: {x: .586067915, y: .248968869}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: morkov_kombo_3_atlas_1
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 606
+        width: 102
+        height: 72
+      alignment: 9
+      pivot: {x: .592818141, y: .269888133}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: morkov_kombo_3_atlas_2
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 606
+        width: 69
+        height: 74
+      alignment: 9
+      pivot: {x: .585756183, y: .244122475}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: morkov_kombo_3_atlas_3
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 606
+        width: 77
+        height: 93
+      alignment: 9
+      pivot: {x: .530738711, y: .270948172}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: morkov_kombo_3_atlas_4
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 606
+        width: 90
+        height: 96
+      alignment: 9
+      pivot: {x: .552596688, y: .228796646}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: morkov_kombo_3_atlas_5
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 486
+        width: 110
+        height: 91
+      alignment: 9
+      pivot: {x: .50000006, y: .278918922}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: morkov_kombo_3_atlas_6
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 487
+        width: 110
+        height: 92
+      alignment: 9
+      pivot: {x: .53227514, y: .22986868}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: morkov_kombo_3_atlas_7
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 487
+        width: 89
+        height: 104
+      alignment: 9
+      pivot: {x: .513296723, y: .22690025}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: morkov_kombo_3_atlas_8
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 488
+        width: 110
+        height: 104
+      alignment: 9
+      pivot: {x: .586067617, y: .272416919}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: morkov_kombo_3_atlas_9
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 488
+        width: 92
+        height: 110
+      alignment: 9
+      pivot: {x: .525726974, y: .241796315}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: morkov_kombo_3_atlas_10
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 365
+        width: 86
+        height: 114
+      alignment: 9
+      pivot: {x: .555043399, y: .302761137}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: morkov_kombo_3_atlas_11
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 368
+        width: 110
+        height: 110
+      alignment: 9
+      pivot: {x: .47848317, y: .317105651}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: morkov_kombo_3_atlas_12
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 367
+        width: 110
+        height: 111
+      alignment: 9
+      pivot: {x: .510758281, y: .276107371}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: morkov_kombo_3_atlas_13
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 365
+        width: 98
+        height: 124
+      alignment: 9
+      pivot: {x: .475848436, y: .318667501}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: morkov_kombo_3_atlas_14
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 367
+        width: 82
+        height: 115
+      alignment: 9
+      pivot: {x: .499999255, y: .314767063}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: morkov_kombo_3_atlas_15
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 246
+        width: 110
+        height: 120
+      alignment: 9
+      pivot: {x: .435448974, y: .243589535}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: morkov_kombo_3_atlas_16
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 245
+        width: 112
+        height: 100
+      alignment: 9
+      pivot: {x: .510566056, y: .192307428}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: morkov_kombo_3_atlas_17
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 244
+        width: 105
+        height: 96
+      alignment: 9
+      pivot: {x: .578895211, y: .216469124}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: morkov_kombo_3_atlas_18
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 245
+        width: 95
+        height: 96
+      alignment: 9
+      pivot: {x: .562286079, y: .241124153}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: morkov_kombo_3_atlas_19
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 243
+        width: 84
+        height: 101
+      alignment: 9
+      pivot: {x: .612707973, y: .230505317}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: morkov_kombo_3_atlas_20
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 127
+        width: 122
+        height: 94
+      alignment: 9
+      pivot: {x: .490299582, y: .210436717}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: morkov_kombo_3_atlas_21
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 126
+        width: 110
+        height: 94
+      alignment: 9
+      pivot: {x: .500000119, y: .235616162}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: morkov_kombo_3_atlas_22
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 128
+        width: 126
+        height: 96
+      alignment: 9
+      pivot: {x: .5, y: .216469288}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: morkov_kombo_3_atlas_23
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 128
+        width: 117
+        height: 105
+      alignment: 9
+      pivot: {x: .469655097, y: .206959456}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: morkov_kombo_3_atlas_24
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 127
+        width: 114
+        height: 106
+      alignment: 9
+      pivot: {x: .499999464, y: .165066406}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: morkov_kombo_3_atlas_25
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 7
+        width: 110
+        height: 103
+      alignment: 9
+      pivot: {x: .510758579, y: .178290159}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: morkov_kombo_3_atlas_26
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 5
+        width: 110
+        height: 105
+      alignment: 9
+      pivot: {x: .489241302, y: .195689082}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: morkov_kombo_3_atlas_27
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 6
+        width: 112
+        height: 107
+      alignment: 9
+      pivot: {x: .52113235, y: .201377153}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: morkov_kombo_3_atlas_28
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 5
+        width: 121
+        height: 116
+      alignment: 9
+      pivot: {x: .460878491, y: .204141751}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: morkov_kombo_3_atlas_29
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 7
+        width: 110
+        height: 103
+      alignment: 9
+      pivot: {x: .532275379, y: .212759048}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
