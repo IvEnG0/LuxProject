@@ -55,10 +55,7 @@ public class Lvl2GameController : MonoBehaviour
 				using (AndroidJavaObject obj_Activity = cls_UnityPlayer.GetStatic<AndroidJavaObject>("currentActivity")) {
 					obj_Activity.Call ("ActivateImmersiveMode");
 				}}}		
-		//спауним сердечка
-		// for (int i = 0; i < hurts.Length; i++)
-		//     hurts[i] = (GameObject)Instantiate(hurts[0], new Vector3(6f - i * 1f, 2f, 0f), new Quaternion(0f, 0f, 0f, 0f));
-		// PlayerContr = GameObject.FindGameObjectWithTag("Player");
+	
 		InvokeRepeating("Spawn", time, spawnTime);		
 		///фон////////////////////////////////////////////////////////////////
 		GameObject[] back = GameObject.FindGameObjectsWithTag("Background");     
