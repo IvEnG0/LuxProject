@@ -85,7 +85,8 @@ public class Enemy : MonoBehaviour {
         else if (other.tag == "Surican" || other.tag == "FireBall" || other.tag == "Axe")
         {
             gameObject.GetComponent<Animator>().Play("Death");
-            Destroy(gameObject, 0.45f);
+			gameObject.GetComponent<MobHP>().curHP=0;
+            //Destroy(gameObject, 0.45f);
         }
     }
 
