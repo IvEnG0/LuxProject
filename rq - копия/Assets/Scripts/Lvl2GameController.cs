@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class Lvl2GameController : MonoBehaviour
@@ -431,3 +431,5 @@ public class Lvl2GameController : MonoBehaviour
 		}
 	}
 }
+
+/*НУ ЕБАННАЯ ХУЙНЯ ДАВАЙ*/
