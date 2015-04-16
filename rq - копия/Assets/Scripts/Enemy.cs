@@ -27,10 +27,11 @@ public class Enemy : MonoBehaviour {
 	void BossDieFunc(){
 		GameObject.Find ("Player").gameObject.GetComponent<PlayerHP>().BossDie = true;
 		Debug.Log ("URA");
-
-		GameObject.Find ("Ded").gameObject.GetComponent<SYKA> ().enabled = true;
-
-		
+		if(GameObject.Find("Giu").gameObject.GetComponent<rer>().enabled==true) {
+		GameObject.Find ("Ded").gameObject.GetComponent<SYKA> ().enabled = false;
+		}
+		if(GameObject.Find("Giu").gameObject.GetComponent<rer>().enabled==false) {
+			GameObject.Find ("Ded").gameObject.GetComponent<SYKA> ().enabled = true;}
 
 	}
 
