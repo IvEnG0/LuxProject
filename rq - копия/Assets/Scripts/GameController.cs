@@ -569,7 +569,7 @@ public class GameController : MonoBehaviour
 			combo.text="Right " + count.ToString();
 			clik=true;				
 		}
-		if (count >= 10) {
+		if (count >= 2) {
 			GameObject zay=GameObject.FindGameObjectWithTag ("LeftEnemy");
 			if(zay==null){zay=GameObject.FindGameObjectWithTag ("RightEnemy");}
 			GameObject.Find ("Player").gameObject.GetComponent<Animator>().Play("Combo");
