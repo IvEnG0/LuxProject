@@ -178,10 +178,14 @@
      <Compile Include="Assets\Scripts\Menu\Gui.cs" />
      <Compile Include="Assets\Scripts\Menu\Level.cs" />
      <Compile Include="Assets\Scripts\Menu\addGameOver.cs" />
+     <Compile Include="Assets\Scripts\Menu\gameOVer2.cs" />
      <Compile Include="Assets\Scripts\Menu\gameOv.cs" />
+     <Compile Include="Assets\Scripts\Menu\gameOv2.cs" />
      <Compile Include="Assets\Scripts\Menu\gameOverpause.cs" />
      <Compile Include="Assets\Scripts\Menu\pauss1.cs" />
      <Compile Include="Assets\Scripts\Menu\puss.cs" />
+     <Compile Include="Assets\Scripts\Menu\puss1.cs" />
+     <Compile Include="Assets\Scripts\Menu\puss2.cs" />
      <Compile Include="Assets\Scripts\Menu\rer.cs" />
      <Compile Include="Assets\Scripts\MenuScript.cs" />
      <Compile Include="Assets\Scripts\MobHP.cs" />

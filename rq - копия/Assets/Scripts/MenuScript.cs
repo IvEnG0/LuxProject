@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 
 public class MenuScript : MonoBehaviour {
@@ -6,7 +6,6 @@ public class MenuScript : MonoBehaviour {
 	public Texture2D normalTexture;
 	public Texture2D rollOverTexture;
 	public bool Quitbtn = false;
-	public bool Pause = false;
 
 	void Start(){
 		QualitySettings.SetQualityLevel (3);
@@ -18,7 +17,6 @@ public class MenuScript : MonoBehaviour {
 				}}}
 	}
 	void OnMouseEnter(){
-	    
 		guiTexture.texture = rollOverTexture;
 	}
 	void OnMouseExit(){
@@ -28,20 +26,8 @@ public class MenuScript : MonoBehaviour {
 		if(Quitbtn){
 			Application.Quit();
 		}
-		else if(Pause)
-		{
-			Time.timeScale =1.0f;
-			AudioListener.volume=1.0f;
-			//	AudioListener.pause=false;
-			GameObject.Find ("resume").gameObject.GetComponent<MenuScript>().enabled=false;
-			GameObject.Find ("resume").gameObject.GetComponent<GUITexture>().enabled=false;
-			GameObject.Find ("GameController").gameObject.GetComponent<GameController>().paused= false;
-			enabled=false;
-		}
-		else
-		{
+		else{
 			Application.LoadLevel(LevelToload);
-			Time.timeScale =1.0f;
 
 		}
 		

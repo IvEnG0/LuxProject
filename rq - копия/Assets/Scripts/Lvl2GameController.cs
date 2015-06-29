@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 
 public class Lvl2GameController : MonoBehaviour
@@ -14,6 +14,7 @@ public class Lvl2GameController : MonoBehaviour
 	public GameObject[] EnemiesArray = new GameObject[10];
 	public GameObject player;
 	public Animator anim;
+	public float clickpausetime = 0.0045f; //чем больше тем больше задержка между ударами
 	private float time = 2f, spawnTime = 1f;//время через которое должны появляться новые враги
 	private int direct = 0;
 	private Enemy enem;
@@ -23,10 +24,12 @@ public class Lvl2GameController : MonoBehaviour
 	private bool clik=false;
 	private bool combostarted=false;
 	public bool comboplay=false;
+	private short comboint = 0;
 	private int nextWave=15;
 	private int firstRab=6;
 	private GameObject Boss;
 	private int rand=0;
+	private short timer = 5;
 	
 	/// <summary>
 	/// /оружие////
@@ -55,8 +58,12 @@ public class Lvl2GameController : MonoBehaviour
 				using (AndroidJavaObject obj_Activity = cls_UnityPlayer.GetStatic<AndroidJavaObject>("currentActivity")) {
 					obj_Activity.Call ("ActivateImmersiveMode");
 				}}}		
-	
+		//спауним сердечка
+		// for (int i = 0; i < hurts.Length; i++)
+		//     hurts[i] = (GameObject)Instantiate(hurts[0], new Vector3(6f - i * 1f, 2f, 0f), new Quaternion(0f, 0f, 0f, 0f));
+		// PlayerContr = GameObject.FindGameObjectWithTag("Player");
 		InvokeRepeating("Spawn", time, spawnTime);		
+		InvokeRepeating ("clickpause", 0.01f, clickpausetime);
 		///фон////////////////////////////////////////////////////////////////
 		GameObject[] back = GameObject.FindGameObjectsWithTag("Background");     
 		///////////////////////////9
@@ -88,6 +95,7 @@ public class Lvl2GameController : MonoBehaviour
 		{ 
 			if(comboplay==true)
 			{return;};
+		if(timer<=2) return;
 			float cor = 0;			
 			if(Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended && GameObject.Find("Player").GetComponent<PlayerHP>().ch!=false){
 				cor = Input.GetTouch (0).position.x;//Input.acceleration.x;
@@ -99,6 +107,7 @@ public class Lvl2GameController : MonoBehaviour
 					anim.Rebind();
 					GameObject.Find ("Main Camera").gameObject.GetComponent<AudioSource> ().PlayOneShot(audPoval);
 					if(Score%10!=0 || Score == 0){
+						comboint=0; //если мы не на комбе делаем счетчик нулем, чтобы след комбу можно было запустить
 						rand=Random.Range(1,5);
 						switch (rand)
 						{
@@ -114,6 +123,8 @@ public class Lvl2GameController : MonoBehaviour
 							
 						}}
 					else if (Score != 0){
+						comboint++; //делаем счетчик 1 теперь комба запустится
+						if(comboint!=1){return;} // если не1 вылазим
 						comboplay=true;
 						rand=Random.Range(0,3);
 						switch(rand){
@@ -125,7 +136,7 @@ public class Lvl2GameController : MonoBehaviour
 						case 2: anim.Play("SuricanAxe");
 							ShotAxe();
 							break;
-						}}
+						}return;}
 					GameObject[] left = GameObject.FindGameObjectsWithTag ("LeftEnemy");			
 					KillEnemy (left);
 				}
@@ -137,6 +148,7 @@ public class Lvl2GameController : MonoBehaviour
 					anim.Rebind();
 					GameObject.Find ("Main Camera").gameObject.GetComponent<AudioSource> ().PlayOneShot(audPoval);
 					if(Score%10!=0 || Score == 0){
+						comboint=0; //если мы не на комбе делаем счетчик нулем, чтобы след комбу можно было запустить
 						rand=Random.Range(1,5);
 						switch (rand)
 						{
@@ -152,6 +164,8 @@ public class Lvl2GameController : MonoBehaviour
 							
 						}}
 					else if (Score != 0){
+						comboint++; //делаем счетчик 1 теперь комба запустится
+						if(comboint!=1){return;} // если не1 вылазим
 						comboplay=true;
 						rand=Random.Range(0,3);
 						switch(rand){
@@ -163,16 +177,21 @@ public class Lvl2GameController : MonoBehaviour
 						case 2: anim.Play("SuricanAxe");
 							ShotAxe();
 							break;
-						}}
+						}return;}
 					GameObject[] right = GameObject.FindGameObjectsWithTag ("RightEnemy");					
 					KillEnemy (right);											
-				}}
+				}} timer=0;
 		} 
 		else 	{		
 			if(comboplay==true)
 			{return;};
+			if(timer<=2) return;
 			//если враг слева, - левую кнопку мыши
-			if (Input.GetMouseButtonDown (0)&& GameObject.Find("Player").GetComponent<PlayerHP>().ch!=false) 
+			if (Input.GetMouseButtonDown (0) && GameObject.Find("Player").GetComponent<PlayerHP>().ch!=false)
+			
+			//if(IsInvoking ("clickpause")!=true){
+				
+
 			{
 				if(isFacingRight == true)
 				{
@@ -182,6 +201,7 @@ public class Lvl2GameController : MonoBehaviour
 				anim.Rebind();
 				GameObject.Find ("Main Camera").gameObject.GetComponent<AudioSource> ().PlayOneShot(audPoval);
 				if(Score%10!=0 || Score == 0){
+					comboint=0; //если мы не на комбе делаем счетчик нулем, чтобы след комбу можно было запустить
 					rand=Random.Range(1,5);
 					switch (rand)
 					{
@@ -197,6 +217,8 @@ public class Lvl2GameController : MonoBehaviour
 						
 					}}
 				else if (Score != 0){
+					comboint++; //делаем счетчик 1 теперь комба запустится
+					if(comboint!=1){return;} // если не1 вылазим
 					comboplay=true;
 					rand=Random.Range(0,3);
 					switch(rand){
@@ -208,12 +230,14 @@ public class Lvl2GameController : MonoBehaviour
 					case 2: anim.Play("SuricanAxe");
 						ShotAxe();
 						break;
-					}}
+					}return;}
 				GameObject[] left = GameObject.FindGameObjectsWithTag ("LeftEnemy");
 				
 				KillEnemy (left);				
 			}
 			if (Input.GetMouseButtonDown (1) && GameObject.Find("Player").GetComponent<PlayerHP>().ch!=false) { //если враг справа, - правую кнопку мыши
+				//if(timer<=3) return;
+			
 				if(isFacingRight == false )
 				{
 					Flip ();
@@ -221,6 +245,7 @@ public class Lvl2GameController : MonoBehaviour
 				anim.Rebind();
 				GameObject.Find ("Main Camera").gameObject.GetComponent<AudioSource> ().PlayOneShot(audPoval);
 				if(Score%10!=0 || Score == 0){
+					comboint=0; //если мы не на комбе делаем счетчик нулем, чтобы след комбу можно было запустить
 						rand=Random.Range(1,5);
 						switch (rand)
 						{
@@ -236,6 +261,8 @@ public class Lvl2GameController : MonoBehaviour
 							
 						}}
 					else if (Score != 0){
+					comboint++; //делаем счетчик 1 теперь комба запустится
+					if(comboint!=1){return;} // если не1 вылазим
 						comboplay=true;
 						rand=Random.Range(0,3);
 						switch(rand){
@@ -247,14 +274,22 @@ public class Lvl2GameController : MonoBehaviour
 						case 2: anim.Play("SuricanAxe");
 							ShotAxe();
 							break;
-						}}
+					}return;}
 				GameObject[] right = GameObject.FindGameObjectsWithTag ("RightEnemy");
 				
 				KillEnemy (right);				
-			}}
+			}
+			timer=0;}
 		MoveSurican();
 		MoveAxe();
 		MoveFireball();
+	}
+
+	 void clickpause()
+	{
+
+		timer++;
+		if(timer>200) timer=5;
 	}
 	
 	private void MoveSurican()
@@ -308,6 +343,7 @@ public class Lvl2GameController : MonoBehaviour
 	
 	private void ShotSurican()
 	{
+		comboint-=10; // делаем счетчик -10 чтобы игрок не успел прокликать и включить еще раз комбу за 1 раз
 		for (int i = 0; i < suricanObjects.Length; i++)
 			if (suricanObjects[i] == null)
 		{
@@ -318,6 +354,7 @@ public class Lvl2GameController : MonoBehaviour
 	
 	public void ShotFireBall()
 	{
+		comboint-=10;
 		float xpos = transform.position.x;
 		if (isFacingRight)
 			xpos = transform.position.x + 1;
@@ -328,6 +365,7 @@ public class Lvl2GameController : MonoBehaviour
 	
 	private void ShotAxe()
 	{
+		comboint-=10;
 		Debug.Log("axe" + axe);
 		for (int i = 0; i < axeObjects.Length; i++)
 			if (axeObjects[i] == null)
@@ -357,11 +395,11 @@ public class Lvl2GameController : MonoBehaviour
 		if (php == null)
 			return;
 		if (php.curHP <= 0) {
-			CancelInvoke ();
+			CancelInvoke ("Spawn");
 		}				
 		int number=0;
 		number=Random.Range(0,10);
-		if(MobCount<=nextWave){
+		if(MobCount<=nextWave-1){
 			Instantiate (EnemiesArray[number], EnemiesArray[number].transform.position, EnemiesArray[number].transform.rotation);
 		}
 		if(MobCount==FragCount){nextWave+=18;}		
@@ -401,7 +439,9 @@ public class Lvl2GameController : MonoBehaviour
 		MobHP mhp = enemiToKill.GetComponent<MobHP>();
 		if (mhp.ch2 == true) {
 			if(enemiToKill.gameObject.layer!=9){mhp.curHP -= 100;};
-			enemiToKill.GetComponent<Animator> (). Play ("Hited");
+			if(mhp.curHP >0){
+				enemiToKill.GetComponent<Animator> (). Play ("Hited");}
+			else{enemiToKill.GetComponent<Animator> (). Play ("Death");}
 		}       	
 		GameObject.Find ("Main Camera").gameObject.GetComponent<CameraController> ().shake = 0.05f;
 	}
@@ -431,5 +471,3 @@ public class Lvl2GameController : MonoBehaviour
 		}
 	}
 }
-
-/*НУ ЕБАННАЯ ХУЙНЯ ДАВАЙ*/

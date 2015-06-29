@@ -150,7 +150,10 @@ public class GameController : MonoBehaviour
 						case 2: anim.Play("SuricanAxe");
 							ShotAxe();
 							break;
-						}}
+						}
+						comboplay=false;
+						
+					}
 					GameObject[] left = GameObject.FindGameObjectsWithTag ("LeftEnemy");
 					if(Boss == null)
 					{
@@ -184,7 +187,7 @@ public class GameController : MonoBehaviour
 						case 4: anim.Play("MKick4");
 							break;
 							
-						}}
+						}comboplay=false;}
 					else if (Score != 0){
 						comboplay=true;
 						rand=Random.Range(0,3);
@@ -258,7 +261,7 @@ public class GameController : MonoBehaviour
 					case 2: anim.Play("SuricanAxe");
 						ShotAxe();
 						break;
-					}}
+					}comboplay=false;}
 				GameObject[] left = GameObject.FindGameObjectsWithTag ("LeftEnemy");
 				if(Boss == null)
 				{
@@ -305,7 +308,7 @@ public class GameController : MonoBehaviour
 					case 2: anim.Play("SuricanAxe");
 						ShotAxe();
 						break;
-					}}
+					}comboplay=false;}
 				GameObject[] right = GameObject.FindGameObjectsWithTag ("RightEnemy");
 				if(Boss == null)
 				{

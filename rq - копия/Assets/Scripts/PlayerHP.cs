@@ -59,7 +59,7 @@ public class PlayerHP : MonoBehaviour
 			//GameObject.Find ("Player").gameObject.GetComponent<BoxCollider2D> ().enabled=false;
 			//GameObject.Find ("Player").gameObject.GetComponent<Rigidbody2D> ().isKinematic=true;
 			GameObject.Find ("Main Camera").gameObject.GetComponent<AudioSource> ().Pause ();
-				GameObject.Find ("Main Camera").gameObject.GetComponent<AudioSource> ().PlayOneShot(loose);			
+				//GameObject.Find ("Main Camera").gameObject.GetComponent<AudioSource> ().PlayOneShot(loose);			
 				GameObject.Find ("Die").gameObject.GetComponent<SpriteRenderer>().enabled = true;
 				Destroy(gameObject, 0.8f);
 				ov=true;

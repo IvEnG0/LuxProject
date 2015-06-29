@@ -32,8 +32,9 @@ public class MobHP : MonoBehaviour
 		if (GameObject.Find ("Player") == null) {
 			return;}
 		PlayerHP php = GameObject.Find("Player").gameObject.GetComponent<PlayerHP>();
-        if (php != null)
-            php.curHP -= damage;
+		if (php != null && GameObject.Find ("GameController").gameObject.GetComponent<Lvl2GameController> ().comboplay == false) {
+			php.curHP -= damage;
+		}
            
 	}
 

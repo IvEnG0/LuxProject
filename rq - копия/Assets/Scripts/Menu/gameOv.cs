@@ -15,13 +15,11 @@ public class gameOv : MonoBehaviour {
 			return;}
 		if (GameObject.Find ("Player").gameObject.GetComponent<PlayerHP>().ov==true) 
 		{
-			GameObject.Find ("menuOver").gameObject.GetComponent<MenuScript>().enabled=true;
-			GameObject.Find ("menuOver").gameObject.GetComponent<GUITexture>().enabled=true;
-			GameObject.Find ("restartOver").gameObject.GetComponent<MenuScript>().enabled=true;
-			GameObject.Find ("restartOver").gameObject.GetComponent<GUITexture>().enabled=true;
+			//Time.timeScale = 0.0f;
+			// AudioListener.pause = true;
 			
-		
-			//transform.gameObject.AddComponent<addGameOver>();
+			
+			transform.gameObject.AddComponent<addGameOver>();
 			GameObject.Find ("Player").gameObject.GetComponent<PlayerHP>().ov=false;
 			//GameObject.Find ("gameov").guiTexture.enabled=true;
 			//guiTexture.texture = gameover;
