@@ -28,7 +28,11 @@ public class Enemy : MonoBehaviour {
 		GameObject.Find ("Player").gameObject.GetComponent<PlayerHP>().BossDie = true;
 		Debug.Log ("URA");
 
-		GameObject.Find ("Ded").gameObject.GetComponent<SYKA> ().enabled = true;
+		if(GameObject.Find("Giu").gameObject.GetComponent<rer>().enabled==true) {
+		GameObject.Find ("Ded").gameObject.GetComponent<SYKA> ().enabled = false;
+		}
+		if(GameObject.Find("Giu").gameObject.GetComponent<rer>().enabled==false) {
+			GameObject.Find ("Ded").gameObject.GetComponent<SYKA> ().enabled = true;}
 
 		
 
@@ -85,7 +89,8 @@ public class Enemy : MonoBehaviour {
         else if (other.tag == "Surican" || other.tag == "FireBall" || other.tag == "Axe")
         {
             gameObject.GetComponent<Animator>().Play("Death");
-            Destroy(gameObject, 0.45f);
+            gameObject.GetComponent<MobHP>().curHP=0;
+			//Destroy(gameObject, 0.45f);
         }
     }
 
